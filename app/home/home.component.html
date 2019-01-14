@@ -1,0 +1,13 @@
+
+<div class="l1">
+    <div class="l2">
+USER NAME<br/>
+<input type="text" [(ngModel)]="uid"/>
+<br/><br/>
+PASSWORD<br/><input type="text" [(ngModel)]="pwd"/>
+<br/><br/>
+<button (click)="f1()"  id="b1">LOGIN</button>
+<button [routerLink]="['/registration']" id="b1">REGISTER</button>
+<h3>{{result}}</h3>
+</div>
+</div>

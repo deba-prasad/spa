@@ -1,0 +1,7 @@
+USER NAME<input type="text" [(ngModel)]="uid"/>
+<br/><br/>
+PASSWORD<input type="text" [(ngModel)]="pwd"/>
+<br/><br/>
+<button (click)="f1()" [routerLink]="['/dashboard']">LOGIN</button>
+<br/>
+<h3>{{result}}</h3>

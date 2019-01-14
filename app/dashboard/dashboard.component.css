@@ -1,0 +1,37 @@
+#f1
+{
+    padding-left: 30px;
+    padding-top: 40px;
+    height: 370px;
+    margin-top: 50px;
+    border: 2px solid red;
+    width: 500px;
+    background-color: lightgrey;
+    font-family: arial;
+    margin-left: 50px;
+}
+input
+{
+    padding: 5px;
+    width: 200px;
+}
+#b1
+{
+    width: 70px;
+    height: 30px;
+    background-color: rgb(32, 86, 185);
+    border: rgb(32, 86, 185);
+    border-radius: 3px;
+    font-family: arial;
+    font-size: 18px;
+    color: white;
+}
+table
+{
+    font-family: arial;
+    border-color: blue;
+}
+th{
+    color: brown;
+    background-color: rgb(135, 224, 220);
+}

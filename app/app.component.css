@@ -1,0 +1,29 @@
+button{
+    width: 150px;
+    height: 40px;
+    margin-top: 30px;
+    background-color: rgb(55, 173, 32);
+    padding: 10px;
+    font-family: arial;
+    border: rgb(55, 173, 32);
+    font-size: 20px;
+}
+
+div
+{
+    text-align:center ;
+    
+}
+#b2:hover
+{
+background-color: rgb(87, 87, 216);
+padding: 10px;
+border: rgb(87, 87, 216);
+text-align: center;
+color: white;
+}
+.b1
+{
+    background-image: url("/assets/image.jpg");
+    height: 950px;
+}

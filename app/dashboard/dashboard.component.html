@@ -1,0 +1,49 @@
+
+<h3 style="text-align:center;font-family: arial;">STUDENT DETAILS</h3>
+<br/>
+
+<table border="1">
+<tr>
+  <th>ID</th>
+  <th>NAME</th>
+  <th>EMAIL</th>
+  <th>CLASS</th>
+  <th>YEAR</th>
+  <th>CITY</th>
+  <th>COUNTRY</th>
+</tr>
+<tr *ngFor="let item of student;let i=index">
+<td style="padding:5px;">{{item.id}}</td>
+<td>{{item.name}}</td>
+<td>{{item.email}}</td>
+<td>{{item.class}}</td>
+<td>{{item.year}}</td>
+<td>{{item.city}}</td>
+<td>{{item.country}}</td>
+<td><button href="#" (click)="f2(i)">Edit</button> </td>
+<td><button href="#" (click)="f3(i)">Select</button> </td>
+<td><button href="#" (click)="f4(i)">Delete</button> </td>
+</tr>
+</table>
+<p style="color:green;margin-left: 40px;">{{abc}}</p>
+
+<div id="f1">
+Student Id <input [(ngModel)]="s1" placeholder="Enter Student Id" style="margin-left: 60px;"/>
+<br/><br/>
+Student Name <input [(ngModel)]="s2" placeholder="Enter Student Name" style="margin-left: 31px;"/>
+<br/><br/>
+Email <input [(ngModel)]="s3" placeholder="Enter Student Email" style="margin-left: 93px;"/>
+<br/><br/>
+Class <input [(ngModel)]="s4" placeholder="Enter Student Class" style="margin-left: 93px;"/>
+<br/><br/>
+Enrollment Year <input [(ngModel)]="s5" placeholder="Enter Student Year" style="margin-left: 20px;"/>
+<br/><br/>
+City <input [(ngModel)]="s6" placeholder="Enter Student City" style="margin-left: 105px;"/>
+<br/><br/>
+Country <input [(ngModel)]="s7" placeholder="Enter Student Country" style="margin-left: 76px;"/>
+<br/><br/>
+<button (click)="f1()" id="b1">Save</button>
+
+</div>
+
+

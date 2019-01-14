@@ -1,0 +1,32 @@
+
+<form [formGroup]="myGroup">
+  FIRST NAME:<input formControlName="fname" style="margin-left:79px;">
+  <span class="c1"
+  *ngIf="myGroup.controls.fname.invalid && myGroup.controls.fname.dirty">First Name Is Required</span>
+  <br/><br/>
+  MIDDLE NAME:<input formControlName="mname" style="margin-left:62px;">
+  <span class="c1"
+  *ngIf="myGroup.controls.mname.invalid && myGroup.controls.mname.dirty">Middle Name Is Required</span>
+  <br/><br/>
+  LAST NAME:<input formControlName="lname" style="margin-left:84px;">
+  <span class="c1" 
+  *ngIf="myGroup.controls.lname.invalid && myGroup.controls.lname.dirty">last name is required</span>
+  <br/><br/>
+  MOBILE NO:<input formControlName="mno" style="margin-left:88px;">
+  <span class="c1"
+  *ngIf="myGroup.controls.mno.invalid && myGroup.controls.mno.dirty">Enter 10 digit mobile number</span>
+<br/><br/>
+EMAIL:<input formControlName="email" style="margin-left:130px;">
+<span class="c1"
+*ngIf="myGroup.controls.email.invalid && myGroup.controls.email.dirty">Enter proper email</span>
+<br/><br/>
+PASSWORD:<input formControlName="pwd" style="margin-left:87px;">
+<span class="c1"
+*ngIf="myGroup.controls.pwd.invalid && myGroup.controls.pwd.dirty">Enter password</span>
+<br/><br/>
+CONFORM PASSWORD:<input formControlName="cpwd">
+<span class="c1"
+*ngIf="myGroup.controls.cpwd.invalid && myGroup.controls.cpwd.dirty">Re-Enter password</span>
+<br/><br/>
+  <button [routerLink]="['/login']">REGISTER</button>
+</form>
